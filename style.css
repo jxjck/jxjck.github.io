@@ -1,5 +1,4 @@
 <style>
-
  body {
     margin: 0;
     color: #fceaff;
@@ -14,20 +13,18 @@ p{
     color: #e4e4f0
 }
 
-
-
 a{
     text-decoration: none;
     color: #c4b4ef ;
   }
 
 #container {
-    max-width: 900px;
+    max-width: 740px;
     margin: 0 auto;
 }
 
 #navbar {
-    height: 40px;
+    height: 35px;
     background-color: #13092D;
     width: 100%;
 }
@@ -37,12 +34,12 @@ a{
     padding: 0;
     margin: 0;
     list-style-type: none;
-    justify-content: space-evenly;
+    justify-content: center;
     overflow: hidden;
 }
 
 #navbar li {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 #navbar li a {
@@ -63,24 +60,16 @@ a{
 main {
     background-color: #43256E;
     flex: 1;
-    padding: 20px;
+    padding: 15px;
     order: 2;
 }
 
-footer {
-    background-color: #25252500;
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    text-align: center;
-    margin: auto 0
-}
-
 h1{
-    font-size: 26px;
+    font-size: 40px;
     text-align: center;
     color: #e4e4f0;
     margin: 0;
+
 }
 
 h2{

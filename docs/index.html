@@ -1,29 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>My Personal Site</title>
   </head>
   <body>
     <div id="container">
-            <nav id="navbar">
-                <ul>       
-                  <li><a href="https://www.linkedin.com/in/jxjc/">|In</a></li>
-                  <li><a href="index.html">|Home|</a></li>
-                  <li><a href="https://github.com/jxjck">GitHub|</a></li>
-                </ul>
-            </nav>
-            <main>
-                <p>Welcome to my site. Not too much here atm. Current email is jxj480 at student.bham.ac.uk for contact stuff.
-                </p>
-                <h2>Posts:</h2>
-                  <a href="2.html">Anki MobileCards (1/10/24)</a> 
-                  <br>
-                  <a href="1.html">PC Builds (24/09/24)</a> 
-                  <br>      
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">|Home|</a></li>
+          <li><a href="https://github.com/jxjck">GitHub|</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <p>Welcome to my personal site. Current email is jxj480 at student.bham.ac.uk for contact stuff.</p>
+
+
+
+        <h2>Posts:</h2>
+        <a href="2.html">Anki MobileCards (1/10/24)</a><br />
+        <a href="1.html">PC Builds (24/09/24)</a><br />
+
+
+
+        <!-- Image Carousel -->
+        <div class="carousel">
+          <div class="carousel-slide active">
+            <img src="images/pc.jpeg" alt="PC" class="carousel-image" />
+            <p class="carousel-caption">Current PC</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/pov.jpg" alt="POV" class="carousel-image" />
+            <p class="carousel-caption">pov</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/thinkpad.jpeg" alt="ThinkPad" class="carousel-image" />
+            <p class="carousel-caption">T480 modding :)</p>
+          </div>
+
+          <!-- Arrows -->
+          <button class="carousel-arrow left">&#10094;</button>
+          <button class="carousel-arrow right">&#10095;</button>
+
+          <!-- Dots -->
+          <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Carousel JavaScript -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.dot');
+        const leftArrow = document.querySelector('.carousel-arrow.left');
+        const rightArrow = document.querySelector('.carousel-arrow.right');
+
+        let index = 0;
+
+        function showSlide(i) {
+          slides.forEach((slide, idx) => {
+            slide.classList.toggle('active', idx === i);
+            dots[idx].classList.toggle('active', idx === i);
+          });
+        }
+
+        function nextSlide() {
+          index = (index + 1) % slides.length;
+          showSlide(index);
+        }
+
+        function prevSlide() {
+          index = (index - 1 + slides.length) % slides.length;
+          showSlide(index);
+        }
+
+        rightArrow.addEventListener('click', nextSlide);
+        leftArrow.addEventListener('click', prevSlide);
+
+        dots.forEach((dot, i) => {
+          dot.addEventListener('click', () => {
+            index = i;
+            showSlide(index);
+          });
+        });
+
+        // Auto-slide removed
+      });
+    </script>
   </body>
 </html>
-
-
- 

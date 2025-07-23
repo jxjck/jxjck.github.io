@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style.css" />
-    <title>My Personal Site</title>
   </head>
   <body>
     <div id="container">
@@ -14,19 +13,12 @@
           <li><a href="https://github.com/jxjck">GitHub|</a></li>
         </ul>
       </nav>
-
       <main>
-        <p>Welcome to my personal site. Current email is jxj480 at student.bham.ac.uk for contact stuff.</p>
-
-
-
+        <p>Welcome to my site. Current email is jxj480 at student.bham.ac.uk for contact stuff.</p>
         <h2>Posts:</h2>
         <a href="2.html">Anki MobileCards (1/10/24)</a><br />
         <a href="1.html">PC Builds (24/09/24)</a><br />
 
-
-
-        <!-- Image Carousel -->
         <div class="carousel">
           <div class="carousel-slide active">
             <img src="images/pc.jpeg" alt="PC" class="carousel-image" />
@@ -41,11 +33,8 @@
             <p class="carousel-caption">T480 modding :)</p>
           </div>
 
-          <!-- Arrows -->
           <button class="carousel-arrow left">&#10094;</button>
           <button class="carousel-arrow right">&#10095;</button>
-
-          <!-- Dots -->
           <div class="carousel-dots">
             <span class="dot active"></span>
             <span class="dot"></span>
@@ -55,7 +44,6 @@
       </main>
     </div>
 
-    <!-- Carousel JavaScript -->
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const slides = document.querySelectorAll('.carousel-slide');
@@ -91,7 +79,6 @@
             showSlide(index);
           });
         });
-
         // Auto-slide removed
       });
     </script>

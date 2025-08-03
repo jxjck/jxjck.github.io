@@ -8,21 +8,28 @@
   <body>
     <div id="container">
       <nav id="navbar">
-        <ul>
-          <li><a href="index.html">|Home|</a></li>
-          <li><a href="https://github.com/jxjck">GitHub|</a></li>
-        </ul>
+        <div class="nav-left">
+          <a href="https://jxjck.github.io">jxjck.github.io</a>
+        </div>
+        <div class="nav-right">
+          <div class="dropdown">
+            <a href="#">Projects ▾</a>
+            <div class="dropdown-menu">
+              <a href="2.html">Anki Card Template</a>
+              <a href="1.html">PC Builds</a>
+            </div>
+          </div>
+          <a href="https://github.com/jxjck">GitHub</a>
+        </div>
       </nav>
+
       <main>
-        <p>Welcome to my site. Contact: jjckx at pm.me.</p>
-        <h2>Posts:</h2>
-        <a href="2.html">Anki Card Template (1/10/24)</a><br />
-        <a href="1.html">PC Builds (24/09/24)</a><br />
+        <p>Welcome to my site. Hover the dropdown menu to see some projects I've worked on. For contact stuff: jjckx at pm.me.</p>
 
         <div class="carousel">
           <div class="carousel-slide active">
             <img src="images/pc.jpeg" alt="PC" class="carousel-image" />
-            <p class="carousel-caption">Current PC</p>
+            <p class="carousel-caption">2nd PC I built</p>
           </div>
           <div class="carousel-slide">
             <img src="images/thinkpad.jpeg" alt="ThinkPad" class="carousel-image" />
@@ -73,7 +80,6 @@
             showSlide(index);
           });
         });
-        // Auto-slide removed
       });
     </script>
   </body>

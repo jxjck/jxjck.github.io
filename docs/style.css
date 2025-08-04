@@ -25,16 +25,17 @@ a:hover {
 }
 
 #container {
-  max-width: 740px;
+  max-width: 640px;
   margin: 0 auto;
   background-color: #222120;
   padding: 15px;
   border-radius: 20px;
-  border: 2px solid #3A3530;
+  border: 2px solid #1A1816;
+
+
   position: relative;
 }
 
-/* Navbar */
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -43,6 +44,7 @@ a:hover {
   background-color: #292827;
   height: 38px;
   font-size: 18px;
+  border-radius: 15px;
 }
 
 .nav-left a,
@@ -97,12 +99,9 @@ a:hover {
   box-sizing: border-box;
 }
 
-
-
 .dropdown-menu a:hover {
   background-color: #3A3530;
 }
-
 
 main {
   background-color: #222120;
